@@ -3,6 +3,7 @@
     width: 280px;
     border: 1px solid gray;
     border-radius: 10px;
+    position: relative;
 }
 
 .img-size{
@@ -10,4 +11,8 @@
     height: 260px;
     margin: 9px;
     border-radius: 10px;
+}
+.btn{
+    position: absolute;
+    bottom: 0;
 }

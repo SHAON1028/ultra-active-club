@@ -37,7 +37,7 @@
       "name": "Chest Press",
       "age":"20-25",
       "time": 20,
-      "description": "Another favourite with bodybuilders, but an extremely important exercise due to the fact that it works an enormous range of muscles across the upper body."
+      "description": "Another favourite with bodybuilders, but an extremely important exercise due to the fact ."
     },
     {
       "id": "6335296ab90b916b7ba77686",
@@ -45,6 +45,6 @@
       "name": "Box Jumps",
       "age":"20-25",
       "time": 20,
-      "description": "With your feet in a shoulder width position, lower yourself into a quarter squat and explosively jump up onto the box with your hands swinging forwards"
+      "description": "With your feet in a shoulder width position, lower yourself into a quarter squat and explosively jump up onto the box "
     }
   ]
