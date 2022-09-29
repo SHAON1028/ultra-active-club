@@ -1,0 +1,50 @@
+[
+    {
+      "id": "6335296a267b495180e0af34",
+      "img": "https://manofmany.com/wp-content/uploads/2020/07/Best-Dumbbell-Exercises-For-Men.jpg",
+      "name": "Dumbbell Overhead Press",
+      "time": 40,
+      "age":"20-25",
+      "description": "Dumbbell Exercises for Building Muscle. Develop total-body strength and build maximum muscle mass with a simple set of dumbbells."
+    },
+    {
+      "id": "6335296a94c798fff371959d",
+      "img": "https://cdn.shopify.com/s/files/1/1254/9163/files/gym_training_weighted_squats_4.jpg?v=1485425432",
+      "name": "Weighted Squats",
+      "age":"20-25",
+      "time": 30,
+      "description": "Squats are widely viewed as the perfect exercise, working an enormous number of muscles across the whole body"
+    },
+    {
+      "id": "6335296ab8931ddcb197f0e6",
+      "img": "https://cdn.shopify.com/s/files/1/1254/9163/files/gym_training_weighted_lunges_2_blog.jpg?v=1485425768",
+      "name": "Weighted Lunges",
+      "age":"20-25",
+      "time": 50,
+      "description": "Like the squat, lunges work a vast number of muscles across the body. The main differences are that each leg is worked independently,"
+    },
+    {
+      "id": "6335296a6e87efdeab0edd08",
+      "img": "https://cdn.shopify.com/s/files/1/1254/9163/files/gym_training_renegade_rowa_blog.jpg?v=1485425852",
+      "name": "Renegade Rows",
+      "age":"20-25",
+      "time": 20,
+      "description": "With two dumbbells, get into a press up position with the dumbbells on the floor. Holding your body in the plank position,"
+    },
+    {
+      "id": "6335296a7be85f6fea33273b",
+      "img": "https://cdn.shopify.com/s/files/1/1254/9163/files/gym_training_chest_press_1_blog.jpg?v=1485425974",
+      "name": "Chest Press",
+      "age":"20-25",
+      "time": 20,
+      "description": "Another favourite with bodybuilders, but an extremely important exercise due to the fact that it works an enormous range of muscles across the upper body."
+    },
+    {
+      "id": "6335296ab90b916b7ba77686",
+      "img": "https://cdn.shopify.com/s/files/1/1254/9163/files/gym_training_box_jumps_1_blog.jpg?v=1485426078",
+      "name": "Box Jumps",
+      "age":"20-25",
+      "time": 20,
+      "description": "With your feet in a shoulder width position, lower yourself into a quarter squat and explosively jump up onto the box with your hands swinging forwards"
+    }
+  ]

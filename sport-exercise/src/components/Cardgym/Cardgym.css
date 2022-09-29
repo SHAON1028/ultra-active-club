@@ -1,0 +1,13 @@
+.gymcard{
+    height: 500px;
+    width: 280px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.img-size{
+    width: 260px;
+    height: 260px;
+    margin: 9px;
+    border-radius: 10px;
+}
