@@ -2,7 +2,7 @@ import React from 'react';
 import './Cardgym.css'
 
 const Cardgym = (props) => {
-    console.log(props.exercise);
+   
     const {exercise} = props
    
     

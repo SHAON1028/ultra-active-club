@@ -1,8 +1,25 @@
-import React from 'react';
+
 import './Cart.css'
 import profileimg from '../../images/Shaon PP New Circle.png'
+import React from 'react';
 
+  import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 const Cart = () => {
+    // toast
+    const notify = () => toast.success(' Congratuations! You have completed your session', {    
+        width:'500px',
+        height:'500px',
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        });
+
+    //toast
     return (
         <div className='ms-2'>
             <div className="profile d-flex align-items-center ">
@@ -53,7 +70,19 @@ const Cart = () => {
             </div>
 
             <div>
-            <button type="button" className="btn btn-primary mt-4 w-75 ms-5 text-white fs-semibold">Activity Completed</button>
+            <button onClick={notify} type="button" className="btn btn-primary mt-4 w-75 ms-5 text-white fs-semibold">Activity Completed</button>
+            <ToastContainer
+            theme='dark'
+position="center"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+/>
             </div>
 
 
