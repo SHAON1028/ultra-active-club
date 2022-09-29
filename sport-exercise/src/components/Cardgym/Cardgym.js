@@ -3,7 +3,7 @@ import './Cardgym.css'
 
 const Cardgym = (props) => {
    
-    const {exercise} = props
+    const {exercise,handleAddtoCart} = props
    
     
     const{id,name,img,time,description,age} = exercise
@@ -18,7 +18,9 @@ const Cardgym = (props) => {
 
             </div>
             <div className='text-center w-50 '>
-            <button type="button" className="btn add-btn btn-primary w-50 mb-1">Add to List</button>
+            <button onClick={()=>{
+                handleAddtoCart(exercise)
+            }} type="button" className="btn add-btn btn-primary w-50 mb-1">Add to List</button>
             </div>
         </div>
 

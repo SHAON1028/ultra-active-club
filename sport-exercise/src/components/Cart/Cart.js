@@ -5,7 +5,15 @@ import React from 'react';
 
   import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
-const Cart = () => {
+const Cart = (props) => {
+    const{cart,setTime,breakTime} = props
+    console.log(cart);
+    let total = 0;
+    // let quantity = 0;
+    for(const exercise of cart){
+        total = total+ exercise.time
+        
+    }
     // toast
     const notify = () => toast.success(' Congratuations! You have completed your session', {    
         width:'500px',
@@ -21,7 +29,7 @@ const Cart = () => {
 
     //toast
     return (
-        <div className='ms-2'>
+        <div className='ms-2 cart'>
             <div className="profile d-flex align-items-center ">
                 <img  src={profileimg} alt="" />
                 <div className='ms-3 mt-3'>
@@ -49,11 +57,21 @@ const Cart = () => {
             <div className='break  mt-4'>
                 <h5 className='mb-4'>Add A Break</h5>
                 <div className='bg-clr  p-3 rounded-1'>
-                <button className='rounded-5 p-2 me-3 hov border-0 '>10<small className=''>s</small></button>
-                <button className='rounded-5 p-2 me-3 hov border-0 '>20<small>s</small></button>
-                <button className='rounded-5 p-2 me-3 hov border-0'>30<small>s</small></button>
-                <button className='rounded-5 p-2 me-3 hov border-0'>40<small>s</small></button>
-                <button className='rounded-5 p-2 me-3 hov border-0'>50<small>s</small></button>
+                <button onClick={()=>{
+                   setTime(10)
+                }} className='rounded-5 p-2 me-3 hov border-0 '>10<small className=''>s</small></button>
+                <button onClick={()=>{
+                   setTime(20)
+                }} className='rounded-5 p-2 me-3 hov border-0 '>20<small>s</small></button>
+                <button onClick={()=>{
+                   setTime(30)
+                }} className='rounded-5 p-2 me-3 hov border-0'>30<small>s</small></button>
+                <button onClick={()=>{
+                   setTime(40)
+                }} className='rounded-5 p-2 me-3 hov border-0'>40<small>s</small></button>
+                <button onClick={()=>{
+                   setTime(50)
+                }} className='rounded-5 p-2 me-3 hov border-0'>50<small>s</small></button>
                 </div>
             </div>
 
@@ -62,10 +80,10 @@ const Cart = () => {
                 <h5 className='mb-2 mt-5'>Excercise Details</h5>
 
                 <div className='mt-4 bg-clr pt-3 pb-2 rounded-1 ps-3 text'>
-                    <p className='fw-bold'>Exercise time:</p>
+                    <p className='fw-bold'>Exercise time: {total}</p>
                 </div>
                 <div className='mt-4 bg-clr pt-3 pb-2 rounded-1 ps-3 text'>
-                    <p className='fw-bold'>Exercise time:</p>
+                    <p className='fw-bold'>Break time: {breakTime}</p>
                 </div>
             </div>
 

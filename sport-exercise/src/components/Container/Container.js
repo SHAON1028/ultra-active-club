@@ -6,14 +6,36 @@ import Cart from '../Cart/Cart';
 import  toast  from '../../utilities/toast'
 const Container = () => {
     const[exercises,setExercises]  =useState([])
+    const[breakTime,setBreakTime] = useState(0)
+    // cart
+    const [ cart,setCart] = useState([])
+    //cart end
     useEffect(()=>{
         fetch('gym.json')
         .then(res=>res.json())
         .then(data=>setExercises(data))
 
     },[])
+//breakTime
 
+const setTime = (time)=>{
+   setBreakTime(time)
+}
 
+//breakTime
+//cart data pathabo
+const handleAddtoCart=(selectedExercise)=>{
+    
+    const newCart =[...cart,selectedExercise]
+    
+
+    setCart(newCart)
+   
+    
+    
+}
+
+// card data pathabo
 
    
     return (
@@ -26,13 +48,13 @@ const Container = () => {
                 </header>
                 <div className='all-cards mt-5 ps-5'>
                     {
-                        exercises.map(exercise=><Cardgym exercise = {exercise} key={exercise.id}></Cardgym>)
+                        exercises.map(exercise=><Cardgym exercise = {exercise} key={exercise.id} handleAddtoCart={handleAddtoCart}></Cardgym>)
                     }
                 </div>
             </div>
             <div className="cart-container col-lg-3 mt-4   ">
                
-                    <Cart toast={toast}></Cart>
+                    <Cart  cart={cart} setTime={setTime} breakTime={breakTime}></Cart>
             </div>
         </div>
         </div>
