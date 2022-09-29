@@ -1,9 +1,10 @@
 import React from 'react';
+import './Blog.css'
 
 const Blog = () => {
     return (
         <div className='mb-5 pt-5 mt-5 w-100' id='blog'>
-            <h2 className='text-center pt-5 mb-5 ms-2 me-2 text-info fw-bolder'>Welcome to Blogs</h2>
+            <h2 className='text-center pt-5 mb-5 ms-2 me-2 clr fw-bolder'>Welcome to Blogs</h2>
             <div class="accordion" id="accordionPanelsStayOpenExample">
   <div class="accordion-item">
     <h2 class="accordion-header" id="panelsStayOpen-headingOne">

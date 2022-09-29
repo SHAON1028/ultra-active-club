@@ -51,7 +51,7 @@ const handleAddtoCart=(selectedExercise)=>{
     return (
         <div className="">
             <div className='row'>
-            <div className="item-container pt-5  col-lg-9 col-sm-6   back-clr" >
+            <div className="item-container pt-5 pe-0  col-lg-9 col-sm-12   back-clr" >
                
                 <div className='all-cards mt-5 ps-5'>
                     {
@@ -59,7 +59,7 @@ const handleAddtoCart=(selectedExercise)=>{
                     }
                 </div>
             </div>
-            <div className="cart-container col-lg-3 mt-5   ">
+            <div className="cart-container col-lg-3 mt-5 col-sm-12  ">
                
                     <Cart  cart={cart} setTime={setTime} breakTime={breakTime}></Cart>
             </div>
