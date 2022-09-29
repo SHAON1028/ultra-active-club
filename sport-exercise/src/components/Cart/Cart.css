@@ -2,7 +2,17 @@
     width: 50px;
     height: 50px;
 }
-.info{
+.bg-clr{
     background-color: whitesmoke;
+}
+.info{
+   
     border-radius: 5px;
 }
+.hov{
+    background-color: white;
+}
+.hov:hover {
+    background-color:blue;
+    color: white;
+  }
