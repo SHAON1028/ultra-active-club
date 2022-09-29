@@ -7,7 +7,7 @@ import React from 'react';
   import 'react-toastify/dist/ReactToastify.css';
 const Cart = (props) => {
     const{cart,setTime,breakTime} = props
-    console.log(cart);
+    
     let total = 0;
     // let quantity = 0;
     for(const exercise of cart){
@@ -29,7 +29,7 @@ const Cart = (props) => {
 
     //toast
     return (
-        <div className='ms-2 cart'>
+        <div className='ms-2 cart '>
             <div className="profile d-flex align-items-center ">
                 <img  src={profileimg} alt="" />
                 <div className='ms-3 mt-3'>

@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import './Container.css'
-import logo from '../../images/logo.png'
+
 import Cardgym from '../Cardgym/Cardgym';
 import Cart from '../Cart/Cart';
 import  toast  from '../../utilities/toast'
+import { getStoredCart } from '../../utilities/fakedb';
 const Container = () => {
     const[exercises,setExercises]  =useState([])
     const[breakTime,setBreakTime] = useState(0)
@@ -16,10 +17,19 @@ const Container = () => {
         .then(data=>setExercises(data))
 
     },[])
+
+    useEffect(()=>{
+        const storedCart = getStoredCart()
+        if(storedCart){
+            setBreakTime(storedCart)
+        }
+    },[breakTime])
 //breakTime
 
 const setTime = (time)=>{
    setBreakTime(time)
+   localStorage.setItem('breakTime',time)
+   
 }
 
 //breakTime
@@ -41,18 +51,15 @@ const handleAddtoCart=(selectedExercise)=>{
     return (
         <div className="">
             <div className='row'>
-            <div className="item-container   col-lg-9 col-sm-6   back-clr" >
-                <header className='d-flex align-items-center mt-5 ps-5 pt-5  '>
-                    <img  src={logo} alt=""  className='logo '/>
-                    <h2 className='text-info'>Power Fitness</h2>
-                </header>
+            <div className="item-container pt-5  col-lg-9 col-sm-6   back-clr" >
+               
                 <div className='all-cards mt-5 ps-5'>
                     {
                         exercises.map(exercise=><Cardgym exercise = {exercise} key={exercise.id} handleAddtoCart={handleAddtoCart}></Cardgym>)
                     }
                 </div>
             </div>
-            <div className="cart-container col-lg-3 mt-4   ">
+            <div className="cart-container col-lg-3 mt-5   ">
                
                     <Cart  cart={cart} setTime={setTime} breakTime={breakTime}></Cart>
             </div>
