@@ -12,7 +12,23 @@ const Cart = () => {
                 <p className='text-secondary mt-0'><small>Dhaka,Bangladesh</small></p>
                 </div>
             </div>
-            
+            <div className="info p-3 w-100 d-flex mt-3 ">
+                <div className="wieght me-5">
+                    <h4 className='mb-0'>75kg</h4>
+                    <p className='text-secondary'>Weight</p>
+
+                </div>
+                <div className="height me-5">
+                <h4 className='mb-0'>5.6</h4>
+                    <p className='text-secondary'>Height</p>
+                </div>
+                <div className="age me-5">
+                <h4 className='mb-0 '>24yrs</h4>
+                    <p className='text-secondary'>Age</p>
+                </div>
+            </div>
+
+
         </div>
     );
 };
