@@ -40,6 +40,22 @@ const Cart = () => {
                 </div>
             </div>
 
+            {/* details */}
+            <div className='details'>
+                <h5 className='mb-2 mt-5'>Excercise Details</h5>
+
+                <div className='mt-4 bg-clr pt-3 pb-2 rounded-1 ps-3 text'>
+                    <p className='fw-bold'>Exercise time:</p>
+                </div>
+                <div className='mt-4 bg-clr pt-3 pb-2 rounded-1 ps-3 text'>
+                    <p className='fw-bold'>Exercise time:</p>
+                </div>
+            </div>
+
+            <div>
+            <button type="button" className="btn btn-primary mt-4 w-75 ms-5 text-white fs-semibold">Activity Completed</button>
+            </div>
+
 
         </div>
     );

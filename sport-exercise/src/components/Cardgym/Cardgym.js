@@ -18,7 +18,7 @@ const Cardgym = (props) => {
 
             </div>
             <div className='text-center w-50 '>
-            <button type="button" className="btn btn-primary w-50 mb-1">Add to List</button>
+            <button type="button" className="btn add-btn btn-primary w-50 mb-1">Add to List</button>
             </div>
         </div>
 
