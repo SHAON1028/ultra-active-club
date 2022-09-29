@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Container.css'
 import logo from '../../images/827b3bfcc8bc92d96e208a25592186b1.jpg'
 import Cardgym from '../Cardgym/Cardgym';
+import Cart from '../Cart/Cart';
 const Container = () => {
     const[exercises,setExercises]  =useState([])
     useEffect(()=>{
@@ -11,22 +12,22 @@ const Container = () => {
 
     },[])
     return (
-        <div className="container">
+        <div className="">
             <div className='row'>
-            <div className="item-container   col-lg-8 col-sm-6  " >
-                <header className='d-flex align-items-center mt-5 ms-5 pt-5 ps-5'>
+            <div className="item-container   col-lg-9 col-sm-6   back-clr" >
+                <header className='d-flex align-items-center mt-5 ps-5 pt-5  '>
                     <img src={logo} alt=""  className='logo '/>
                     <h2 className='text-info'>Fitness Whale</h2>
                 </header>
-                <div className='all-cards'>
+                <div className='all-cards mt-5 ps-5'>
                     {
                         exercises.map(exercise=><Cardgym exercise = {exercise}></Cardgym>)
                     }
                 </div>
             </div>
-            <div className="cart-container col-lg-4    ">
-                <h3>Cart</h3>
-
+            <div className="cart-container col-lg-3 mt-4   ">
+               
+                    <Cart></Cart>
             </div>
         </div>
         </div>
