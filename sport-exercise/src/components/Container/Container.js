@@ -19,11 +19,16 @@ const Container = () => {
     },[])
 
     useEffect(()=>{
-        const storedCartString = getStoredCart()
-        const storedCart =JSON.parse(storedCartString)
-        if(storedCart){
-            setBreakTime(storedCart)
+        
+        const storedCart = getStoredCart()
+        console.log(storedCart);
+        
+      
+         if(storedCart){
+            
+          setBreakTime(storedCart)
         }
+         
     },[breakTime])
 
 const setTime = (time)=>{
